@@ -1,0 +1,166 @@
+.header {
+  width: 100%;
+}
+
+.scrollBanner {
+  background-color:var(--blue); /* Bootstrap blue */
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  color: white;
+}
+
+.scrollText {
+  display: inline-block;
+  animation: scroll-left 30s linear infinite;
+  font-size: 16px;
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.highlight {
+  
+  background-color: var(--lightOrange); /* Golden Yellow for contrast */
+  color: white;
+  padding: 3px;
+}
+
+/* second sec style */
+.topLinks {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;  
+  color: black;
+  gap: 60px;
+}
+
+/* icon + text layout */
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.linkItem img {
+  width: 40px;
+  height: 40px;
+}
+
+/* links should inherit color */
+.linkItem a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+/* Hide this section on mobile and tablet */
+@media (max-width: 1024px) {
+  .topLinks {
+    display: none;
+  }
+}
+
+/* third sec style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+   background-image: linear-gradient(to right, var(--darkGreen), #79B746);
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Desktop Nav */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+
+.loginBtn {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  
+}
+
+.loginBtn:hover {
+  background-color: #e45520;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive for tablet & mobile */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    color: white;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    gap: 15px;
+    z-index: 100;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navLinks a
+   {
+    width: 100%;
+    text-align: left;
+    color: black;
+  }
+  .loginBtn{
+    align-self:flex-start;
+  }
+}
+

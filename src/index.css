@@ -1,0 +1,18 @@
+:root{
+  --blue:#075ABF;
+  --darkGreen:#008A71;
+  --orange:#FE632D;
+  --brown:#A21942;
+  --lightOrange:#FD9D24;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: "ffffff";
+  box-sizing: border-box;
+}
