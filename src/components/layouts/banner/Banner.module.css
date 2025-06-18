@@ -1,0 +1,80 @@
+.banner {
+  background-image: url("../../../assets/bannerAssets/banner.jpg"); /* place your image in public/images/ */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding: 60px 20px;
+  margin-top: 170px;
+  
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+.details p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.dateContainer{
+    background-image: linear-gradient(to right, var(--darkGreen), #79b746);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.dateContainer p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.logos img {
+  width: 70px;
+  height: auto;
+}
+
+@media (max-width: 1024px){
+    .banner{
+        padding:40px 20px ;
+        margin-top: 110px;
+    }
+    .logos img{
+        width: 60px;
+    }
+    .dateContainer{
+        width: 100%;
+    }
+    .dateContainer p{
+        font-size: 14px;
+    }
+}
