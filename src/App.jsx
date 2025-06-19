@@ -4,7 +4,7 @@ import Banner from "./components/layouts/banner/Banner";
 import Footer from "./components/layouts/footer/Footer";
 import Header from "./components/layouts/header/Header";
 import Highlights from "./components/layouts/highlights/Highlights";
-import Register from "./components/layouts/register/register";
+import Register from "./components/layouts/register/Register";
 import Session from "./components/layouts/session/Session";
 import Who from "./components/layouts/who/Who";
 import Why from "./components/layouts/why/Why";
