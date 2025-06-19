@@ -3,7 +3,7 @@ import aboutImg from "../../../assets/bannerAssets/about.png"; // replace with y
 
 const About = () => {
   return (
-    <section className={styles.aboutSection}>
+    <section className={styles.aboutSection} data-aos="fade-up">
       <div className={styles.container}>
         <div className={styles.textContent}>
           <h2>Welcome to ICLSMHA-2026</h2>

@@ -19,7 +19,7 @@ const Banner = () => {
   return (
     <section className={styles.banner}>
       <div className={styles.overlay}>
-        <div className={styles.content}>
+        <div className={styles.content} data-aos="fade-up">
           <h1>
             International Conference on Life Sciences and Multidisciplinary
             <br /> Healthcare Approaches (ICLSMHA-2026)

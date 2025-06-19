@@ -1,0 +1,121 @@
+.aboutSection {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;  
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center; 
+  
+}
+
+.textContent {
+  flex: 1 1 50%;
+}
+
+.textContent h2 {
+  font-size: 24px;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.textContent p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: black;
+  text-align: left;
+}
+
+.sessionList {
+  margin-top: 15px;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.sessionList li {
+  margin-bottom: 6px;
+}
+
+.imageContent {
+  flex: 1 1 35%;
+  text-align: center;  
+}
+
+.imageContent img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 12px; /* optional for consistency */
+}
+
+/* deadline section */
+.deadlineCard {
+  background-color: var(--blue); /* or use #007BFF if no CSS variable */
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.deadlineCard h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.deadlineCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deadlineCard li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.link {
+  color: #ffe;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 20px;
+  }
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    
+  }
+
+  .textContent,
+  .imageContent {
+    flex: 1 1 100%;
+  }
+  .imageContent img{
+    height: 100%;
+  }
+}

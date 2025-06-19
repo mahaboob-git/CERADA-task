@@ -43,7 +43,7 @@ const highlightsData = [
 
 const Highlights = () => {
   return (
-    <section className={styles.highlightsSection}>
+    <section className={styles.highlightsSection} data-aos="fade-up">
       <h2 className={styles.title}>Key Highlights of ICLSMHA</h2>
       <div className={styles.grid}>
         {highlightsData.map((item, index) => (

@@ -1,0 +1,88 @@
+.registrationSection {
+  padding: 0px 20px 20px 20px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+}
+
+.card {  
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-top: -20px;
+}
+
+.publicationCard {
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  background: linear-gradient(to top, var(--darkGreen), #01c7a2);
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.publicationCard h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logoContainer img {
+  height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.note {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+ 
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+    .logoContainer {
+    gap: 10px;
+  }
+
+  .logoContainer img {
+    height: 45px;
+    max-width: 90px;
+  }
+
+  .publicationCard h3 {
+    font-size: 20px;
+  }
+}

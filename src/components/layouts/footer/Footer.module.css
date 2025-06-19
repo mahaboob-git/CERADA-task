@@ -1,0 +1,157 @@
+.footer {
+  background-color: #001f3f; /* dark blue */
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+}
+
+.footerMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footerSection {
+  flex: 1 1 220px;
+}
+
+.footerSection p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footerSection span {
+  color: rgb(255, 140, 0);
+  font-weight: 600;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footerSection h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.organizerCard {
+  background-color: white;
+  color: #000;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Social Media Section */
+.socialSection {
+  background-color: #0360c4;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 3px solid rgb(99, 182, 255);
+}
+
+.socialSection span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.socialIcons svg {
+  background-color: white;
+  color: #001637;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.socialIcons svg:hover {
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.copyright {
+  background-color: #002863;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px auto;
+  width: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footerMain {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footerSection {
+    text-align: left;
+  }
+
+  .footerSection ul li {
+    justify-content: start;
+  }
+
+  .organizerCard {
+    text-align: left;
+  }
+
+  .socialSection,
+  .copyright {
+    width: 100%;
+    max-width: none;
+  }
+  .socialSection span{
+    margin-bottom: 15px;
+  }
+  .socialIcons{
+    gap: 15px;
+  }
+}
